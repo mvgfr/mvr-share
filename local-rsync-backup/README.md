@@ -15,7 +15,7 @@ setup & operation
 - cron it:
   - modify your user's `crontab`  
   `crontab -e`
-  - adding line like this `3,33 * * * *   ~/tmp/git/mvr-share/rsync-w-backup.sh`
+  - adding line like this `3,33 * * * *   ~/tmp/git/mvr-share/local-rsync-backup/rsync-w-backup.sh`
     - which does a run every half hour  
     (3 minutes offset, so less chance of conflict with other operations)
   - after an hour, check the results
