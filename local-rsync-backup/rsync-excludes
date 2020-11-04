@@ -63,6 +63,7 @@ Oracle/Java
 Pictures
 Pulse Secure
 qd-bak
+rsync-dest
 tmp
 Library/Group Containers/group.com.apple.notes
 Library/SyncedPreferences
@@ -86,4 +87,3 @@ etc/sudo_lecture
 etc/sudoers
 etc/symantec/defutils.conf
 Library/Application Support/Growl/Tickets
-OneDrive - Cox Automotive/xfer
