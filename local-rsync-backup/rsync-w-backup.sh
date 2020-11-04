@@ -6,9 +6,9 @@
 # Output: logfile; files in dest, rsync'd from src
 # Requirements: rsync-excludes (in same dir as executable)
 
-# note: NO trailing slash on src, so will copy that _dir_ to dest:
-srcDir=~
-destDirParent=~/rsync-dest
+
+# NOTE: this hard-coded dest dir, is in the rsync-excludes (kinda required)
+destDirParent=~/tmp/rsync-dest
   destDirCurrent=$destDirParent/current
   destDirBackups=$destDirParent/backups
 theNow=$(date "+%Y%m%d-%H%M%S")
@@ -19,16 +19,6 @@ doVerbose='--verbose'
 myBase=$(basename "$0")
 myDir=$(dirname "$0")
 
-# ensure dest dir exists; force trailing slash, to deref if symlink:
-if ! [ -d "$destDirParent"/ ] ; then
-	echo "ERR: bailing; can't read dest dir parent:" "$srcDir"
-	exit 1
-fi
-
-if ! [ -d "$srcDir" ] ; then
-	echo "ERR: bailing; can't read src dir:" "$srcDir"
-	exit 1
-fi
 
 # create our directory structure, in the dest parent:
 for aDest in "$destDirCurrent"  "$destDirBackups" ; do
@@ -47,7 +37,7 @@ done
 echo
 echo $(date "+%Y%m%d-%H%M%S") "$myBase STARTING"
 
-# note: NO trailing slash on srcDir, so will copy that _dir_ to dest:
+# note: NO trailing slash on srcDir, so will copy that _dir_ (vs only contents) to dest:
 for srcDir in ~ /private/etc; do
   rsync \
 	"$srcDir" \
