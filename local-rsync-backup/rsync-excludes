@@ -1,0 +1,89 @@
+.dropbox
+.DS_Store
+.fseventsd
+.localized
+.node-gyp
+.npm
+.terraform.d
+.Trash
+*Cache
+*Caches
+AddressBook/Metadata
+AddressBook/Sources
+Application Support/AddressBook
+Application Support/CallHistoryDB
+Application Support/Java
+Application Support/Slack
+Application Support/SyncServices
+Applications
+Crash Reports
+CrashReporter
+Google/Chrome
+GoToOpener/GoToOpener.app
+Library/Accounts
+Library/Application Support/Knowledge
+Library/Application Support/OneDrive
+Library/Application Support/com.apple.sbd
+Library/Application Support/com.apple.sharedfilelist
+Library/Assistant
+Library/Calendars
+Library/Containers/com.agilebits.onepassword*
+Library/com.apple.icloud.searchpartyd
+Library/Containers/com.apple.*/Data
+Library/Containers/com.barebones.bbedit/Data
+Library/Containers/com.microsoft.*/Data
+Library/Cookies
+Library/Developer
+Library/Google/GoogleSoftwareUpdate
+Library/Group Containers/*com.tapbots.Pastebot2Mac
+Library/Group Containers/*Office
+Library/Group Containers/*.OneDriveSyncClientSuite
+Library/HomeKit
+Library/IdentityServices
+Library/Keychains
+Library/LanguageModeling
+Library/Logs/OneDrive
+Library/Mail
+Library/MediaStream
+Library/Messages
+Library/Metadata
+Library/PersonalizationPortrait
+Library/PreferencePanes
+Library/Printers
+Library/PubSub
+Library/Reminders
+Library/Safari
+Library/Saved Application State
+Library/Suggestions
+LogMeInInc/GoToMeeting
+Microsoft/Teams
+Movies
+Music
+Oracle/Java
+Pictures
+Pulse Secure
+qd-bak
+tmp
+Library/Group Containers/group.com.apple.notes
+Library/SyncedPreferences
+etc/aliases.db
+etc/cups/certs
+etc/cups/printers.conf
+etc/cups/printers.conf.O
+etc/cups/printers.conf.pre-update
+etc/krb5.keytab
+etc/master.passwd
+etc/openldap/DB_CONFIG.example
+etc/openldap/slapd.conf.default
+etc/racoon/psk.txt
+etc/security/audit_control
+etc/security/audit_user
+etc/ssh/ssh_host_dsa_key
+etc/ssh/ssh_host_ecdsa_key
+etc/ssh/ssh_host_ed25519_key
+etc/ssh/ssh_host_rsa_key
+etc/sudo_lecture
+etc/sudoers
+etc/symantec/defutils.conf
+Library/Application Support/Growl/Tickets
+OneDrive - Cox Automotive/xfer
