@@ -21,6 +21,7 @@ setup & operation
   - after an hour, check the results
 
 notes
+- tested on macOS 10.15; for others: YMMV
 - keep an eye on your disk usage; it can get filled fast
   - you may want to be more selective, in the source/s selected for rsync
 - destination directory:
