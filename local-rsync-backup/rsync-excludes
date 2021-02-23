@@ -5,6 +5,7 @@
 .m2
 .node-gyp
 .npm
+.sdkman
 .terraform.d
 .Trash
 *Cache
