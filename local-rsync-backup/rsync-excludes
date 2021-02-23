@@ -2,6 +2,7 @@
 .DS_Store
 .fseventsd
 .localized
+.m2
 .node-gyp
 .npm
 .terraform.d
