@@ -2,11 +2,6 @@
 .DS_Store
 .fseventsd
 .localized
-.m2
-.node-gyp
-.npm
-.sdkman
-.terraform.d
 .Trash
 *Cache
 *Caches
@@ -64,9 +59,7 @@ Music
 Oracle/Java
 Pictures
 Pulse Secure
-qd-bak
 rsync-dest
-tmp
 Library/Group Containers/group.com.apple.notes
 Library/SyncedPreferences
 etc/aliases.db

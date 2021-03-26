@@ -6,12 +6,24 @@
 # Output: logfile; files in dest, rsync'd from src
 # Requirements: rsync-excludes (in same dir as executable)
 
+# History:
+# 20210326 mvr: _explicitly_ exclude the dest dir
+# 20210326 mvr: add ability to override $destDirParent
+# 20210326 mvr: skip this invocation, if another is still running
+# 20210326 mvr: ensure parent dir exists (safer)
+# 20210326 mvr: add --extended-attributes (!)
+# circa 2020 mvr: incep
 
-# NOTE: this hard-coded dest dir, is in the rsync-excludes (kinda required)
-destDirParent=~/tmp/rsync-dest
-  destDirCurrent=$destDirParent/current
-  destDirBackups=$destDirParent/backups
+
+# if no dest dir provided, try a default:
+if [ -z "$destDirParent" ] ; then
+    destDirParent=~/tmp/rsync-dest
+fi
+destDirCurrent=$destDirParent/current
+destDirBackups=$destDirParent/backups
+
 theNow=$(date "+%Y%m%d-%H%M%S")
+
 #doDryRun='--dry-run'
 doVerbose='--verbose'
 #extraOpts='--stats  --progress'
@@ -19,6 +31,20 @@ doVerbose='--verbose'
 myBase=$(basename "$0")
 myDir=$(dirname "$0")
 
+
+# FIRST: make sure another isn't already/still running:
+myPID=$$
+otherInvocs=$(pgrep -f "$myBase" | fgrep -v "$myPID")
+if [ -n "$otherInvocs" ] ; then
+    echo 'ERR: bailing, since there is another already/still running]' >&2
+    exit 1
+fi
+
+# make sure at least the parent dir exists:
+if [ \! -d "$destDirParent" ] ; then
+    echo 'ERR: bailing; destDir does not exist: '"$destDirParent"
+    exit 1
+fi
 
 # create our directory structure, in the dest parent:
 for aDest in "$destDirCurrent"  "$destDirBackups" ; do
@@ -43,10 +69,12 @@ for srcDir in ~ /private/etc; do
 	"$srcDir" \
 	"$destDirCurrent" \
 	--exclude-from="$myDir"/rsync-excludes \
+        --exclude="$destDirParent" \
 	$doDryRun \
 	$extraOpts \
 	$doVerbose \
     --archive \
+    --extended-attributes \
     --omit-dir-times \
     --checksum \
     --ignore-errors \
