@@ -1,3 +1,4 @@
+.bash_sessions
 .dropbox
 .DS_Store
 .fseventsd
@@ -15,53 +16,6 @@ Application Support/SyncServices
 Applications
 Crash Reports
 CrashReporter
-Google/Chrome
-GoToOpener/GoToOpener.app
-Library/Accounts
-Library/Application Support/Knowledge
-Library/Application Support/OneDrive
-Library/Application Support/com.apple.sbd
-Library/Application Support/com.apple.sharedfilelist
-Library/Assistant
-Library/Calendars
-Library/Containers/com.agilebits.onepassword*
-Library/com.apple.icloud.searchpartyd
-Library/Containers/com.apple.*/Data
-Library/Containers/com.barebones.bbedit/Data
-Library/Containers/com.microsoft.*/Data
-Library/Cookies
-Library/Developer
-Library/Google/GoogleSoftwareUpdate
-Library/Group Containers/*com.tapbots.Pastebot2Mac
-Library/Group Containers/*Office
-Library/Group Containers/*.OneDriveSyncClientSuite
-Library/HomeKit
-Library/IdentityServices
-Library/Keychains
-Library/LanguageModeling
-Library/Logs/OneDrive
-Library/Mail
-Library/MediaStream
-Library/Messages
-Library/Metadata
-Library/PersonalizationPortrait
-Library/PreferencePanes
-Library/Printers
-Library/PubSub
-Library/Reminders
-Library/Safari
-Library/Saved Application State
-Library/Suggestions
-LogMeInInc/GoToMeeting
-Microsoft/Teams
-Movies
-Music
-Oracle/Java
-Pictures
-Pulse Secure
-rsync-dest
-Library/Group Containers/group.com.apple.notes
-Library/SyncedPreferences
 etc/aliases.db
 etc/cups/certs
 etc/cups/printers.conf
@@ -81,4 +35,68 @@ etc/ssh/ssh_host_rsa_key
 etc/sudo_lecture
 etc/sudoers
 etc/symantec/defutils.conf
+Google/Chrome
+GoToOpener/GoToOpener.app
+Library/Accounts
+Library/Application Support/com.apple.ProtectedCloudStorage
+Library/Application Support/com.apple.sbd
+Library/Application Support/com.apple.sharedfilelist
+Library/Application Support/com.apple.spotlight
+Library/Application Support/com.apple.touristd
+Library/Application Support/com.apple.transparencyd
 Library/Application Support/Growl/Tickets
+Library/Application Support/Knowledge
+Library/Application Support/OneDrive
+Library/Assistant
+Library/Calendars
+Library/com.apple.icloud.searchpartyd
+Library/com.apple.internal.ck/synched.db
+Library/Containers/com.agilebits.onepassword*
+Library/Containers/com.apple.*/Data
+Library/Containers/com.barebones.bbedit/Data
+Library/Containers/com.microsoft.*/Data
+Library/Cookies
+Library/DataDeliveryServices
+Library/Developer
+Library/Google/GoogleSoftwareUpdate
+Library/Group Containers/*.OneDriveSyncClientSuite
+Library/Group Containers/*com.tapbots.Pastebot2Mac
+Library/Group Containers/*Office
+Library/Group Containers/group.com.apple.notes
+Library/Group Containers/UBF8T346G9.com.microsoft.oneauth
+Library/Group Containers/UBF8T346G9.OfficeOneDriveSyncIntegration
+Library/Group Containers/UBF8T346G9.OneDriveStandaloneSuite
+Library/HomeKit
+Library/HTTPStorages
+Library/IdentityServices
+Library/Keychains
+Library/LanguageModeling
+Library/Logs/Baseband
+Library/Logs/brew-outdated.log
+Library/Logs/DiagnosticReports
+Library/Logs/Homebrew
+Library/Logs/OneDrive
+Library/Mail
+Library/MediaStream
+Library/Messages
+Library/Metadata
+Library/PersonalizationPortrait
+Library/PreferencePanes
+Library/Printers
+Library/PubSub
+Library/Reminders
+Library/Safari
+Library/Saved Application State
+Library/Sharing/AirDropHashDB
+Library/Spelling/dynamic-counts.dat
+Library/Suggestions
+Library/SyncedPreferences
+Library/Trial/v5/Database
+LogMeInInc/GoToMeeting
+Microsoft/Teams
+Movies
+Music
+Oracle/Java
+Pictures
+Pulse Secure
+rsync-dest
