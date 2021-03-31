@@ -7,6 +7,7 @@
 # Requirements: rsync-excludes (in same dir as executable)
 
 # History:
+# 20210331 mvr: remv --extended-attributes; seems broken (always backs up all)
 # 20210326 mvr: _explicitly_ exclude the dest dir
 # 20210326 mvr: add ability to override $destDirParent
 # 20210326 mvr: skip this invocation, if another is still running
@@ -74,7 +75,6 @@ for srcDir in ~ /private/etc; do
 	$extraOpts \
 	$doVerbose \
     --archive \
-    --extended-attributes \
     --omit-dir-times \
     --checksum \
     --ignore-errors \
