@@ -22,6 +22,10 @@ if [ -z "$destDirParent" ] ; then
 fi
 destDirCurrent=$destDirParent/current
 destDirBackups=$destDirParent/backups
+# craft an rsycn-specific... exclude, of this dest dir:
+tildeExpansion=~
+tildeParent=$(dirname "$tildeExpansion")'/'
+destDirExclude=$(echo -n "$destDirParent" | sed "s~^$tildeParent~~")
 
 theNow=$(date "+%Y%m%d-%H%M%S")
 
@@ -70,7 +74,7 @@ for srcDir in ~ /private/etc; do
 	"$srcDir" \
 	"$destDirCurrent" \
 	--exclude-from="$myDir"/rsync-excludes \
-        --exclude="$destDirParent" \
+        --exclude="$destDirExclude" \
 	$doDryRun \
 	$extraOpts \
 	$doVerbose \
