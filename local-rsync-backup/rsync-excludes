@@ -3,7 +3,13 @@
 .DS_Store
 .fseventsd
 .localized
+.m2
+.node-script
+.npm
+.nvm
+.sdkman
 .Trash
+*.mp4
 *Cache
 *Caches
 AddressBook/Metadata
@@ -99,3 +105,4 @@ Music
 Oracle/Java
 Pictures
 Pulse Secure
+Users/*/tmp
