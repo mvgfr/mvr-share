@@ -61,6 +61,7 @@ Library/Containers/com.agilebits.onepassword*
 Library/Containers/com.apple.*/Data
 Library/Containers/com.barebones.bbedit/Data
 Library/Containers/com.microsoft.*/Data
+Library/Containers/com.docker.docker/Data/vms
 Library/Cookies
 Library/DataDeliveryServices
 Library/Developer
