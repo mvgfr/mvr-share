@@ -7,6 +7,8 @@
 # Requirements: rsync-excludes (in same dir as executable)
 
 # History:
+# 20210416 mvr: fix excludes (for crazy rsync rules...)
+#               sicne they're not backed up, decided not to add opt --delete-excluded
 # 20210331 mvr: remv --extended-attributes; seems broken (always backs up all)
 # 20210326 mvr: _explicitly_ exclude the dest dir
 # 20210326 mvr: add ability to override $destDirParent
