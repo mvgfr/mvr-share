@@ -106,4 +106,6 @@ Music
 Oracle/Java
 Pictures
 Pulse Secure
-**/Users/*/tmp
+
+# path anchored to root of transfer:
+/*/tmp
