@@ -109,3 +109,6 @@ Pulse Secure
 
 # path anchored to root of transfer:
 /*/tmp
+/*/Library/Containers/*/Data
+/*/Library/News
+/*/Library/WebKit/*/WebsiteData
